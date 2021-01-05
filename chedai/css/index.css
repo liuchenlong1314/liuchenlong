@@ -1,0 +1,81 @@
+.yin{display: none;}
+.xian{display: block;}
+
+#all{width:600px;margin:0 auto;}
+#top{
+    border:1px solid red;
+    height: 60px;}
+#top img{
+    display: block;
+    height: 40px;
+    /*logo的定位一般都是绝对定位.*/
+    position: absolute;
+    margin:10px 0 0 460px ;
+}
+#top div{
+
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align:center;
+    background:gray;
+}
+/*第一个DIV的位置调整*/
+#top div:nth-child(2){
+    margin:15px 0 0 20px ;
+}
+/*第二个DIV的位置调整*/
+#top div:nth-child(3){
+    margin:-45px 0 0 180px ;
+}
+
+/**将span设置成按钮手势*/
+#ipt1,#ipt2{cursor: pointer;}
+
+
+
+#mid{
+    height: 230px;
+}
+#mid #div1 #dx{
+    width: 30px;
+}
+
+#mid div:nth-child(1),#mid div:nth-child(2){
+    height: 180px;
+}
+
+#mid div:nth-child(1){
+    background: lightblue;
+}
+#mid div:nth-child(2){
+    background: lightpink;
+}
+
+
+#mid div:nth-child(3){
+    border:1px solid red;
+    height: 50px;
+}
+#mid #but1{
+    margin-top: 15px;
+    margin-left: 20px;
+    background-size: 10px;
+}
+#mid #but2{
+    /**使用内边距会撑开盒子*/
+    float: right;
+    border:none;
+    margin-top: 15px;
+   margin-right: 20px;
+    background: url("../img/3.png") no-repeat;
+}
+
+
+#bot{
+    border:1px solid blue;
+    height: 180px;
+}
+#bot #dax{
+    width:80px
+}

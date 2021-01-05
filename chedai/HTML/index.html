@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>车货计算器</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
+
+</head>
+<body>
+<!--div>div*3-->
+<div id="all">
+    <div id="top">
+        <img src="../img/2.png" alt="">
+        <!--(div*2>span)+img-->
+        <div><span id="ipt1">购车借款计算</span></div>
+        <div><span id="ipt2">购车税费</span></div>
+    </div>
+    <div id="mid">
+        <div id="div1">
+            <!--value属性的值为空  = "" -->
+            <!--<input type="text" >-->
+            <br> 裸车价格：<input type="text">万元</br>
+            <br>首付比例：
+            <select>
+                <option value ="9">二成</option>
+                <option value ="10">五成</option>
+                <option value="11">七成</option>
+                <option value="12">全款</option>
+            </select></br>
+
+            <br>贷款期限：
+            <select>
+                <option value ="13">1年</option>
+                <option value ="14">2年</option>
+                <option value="15">3年</option>
+                <option value="16">4年</option>
+            </select></br>
+            贷款年利率：
+            <select>
+                <option value ="17">5.6%（6个月之内）</option>
+                <option value ="18">6.0%（1年之内）</option>
+                <option value="19">7.0%（2年之内）</option>
+                <option value="20">8.0%（3年之内）</option>
+            </select>
+            <select>
+                <option value ="21">无折扣</option>
+                <option value ="22">九折（1年之内）</option>
+                <option value="23">八折（2年之内）</option>
+                <option value="24">七折（3年之内）</option>
+            </select> =
+            <input  id="dx" type="text">%
+        </div>
+        <div id="div2" class="yin">
+            <br> 裸车价格：<input type="text">万元</br>
+            <br>车辆排量：
+            <select>
+                <option value ="5">1-2L</option>
+                <option value ="6">2-3L</option>
+                <option value="7">3-4L</option>
+                <option value="8">4-5L</option>
+            </select></br>
+            <br>计划上牌地：
+            <select>
+                <option value ="1">H-河北</option>
+                <option value ="2">B-北京</option>
+                <option value="3">S-上海</option>
+                <option value="4">G-广东</option>
+            </select>(含首字母)
+            </br>
+            <br>车辆情况：<input type="radio" name="shang" >6辆以上
+            <input type="radio" name="shang" checked>6辆以下</br>
+        </div>
+        <div>
+            <button id="but1">立即计算</button>
+            <button id="but2">清除</button>
+        </div>
+    </div>
+    <div id="bot" >
+        计算结果
+        <br> 费用合计：<input  id="s" class="a" type="text">元</br>
+        <br> 新车购置税：<input id="h" calss="b" type="text">元     车船使用税税：<input id="dax" type="text">元</br>
+        <br> 上牌费用：<input id="u" class="c"type="text">元         交强险费用：<input id="ki" class="d" type="text">元</br>
+
+
+    </div>
+</div>
+</body>
+</html>
